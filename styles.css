@@ -308,3 +308,64 @@ a { color: var(--text-0); text-decoration: none; }
 .site-header, .card, .btn { will-change: transform; }
 .btn-primary, .btn-secondary { box-shadow: 0 0 0 rgba(0,0,0,0); }
 .btn-primary:hover, .btn-secondary:hover { box-shadow: var(--glow); }
+
+/* Form */
+.form-card { padding: 22px; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 16px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-1);
+  margin: 0 0 6px 2px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"] {
+  width: 100%;
+  appearance: none;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: var(--text-0);
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.field input::placeholder { color: var(--muted); opacity: 0.85; }
+
+.field input:focus {
+  border-color: rgba(16, 243, 255, 0.7);
+  box-shadow: 0 0 0 3px rgba(16, 243, 255, 0.18), 0 0 20px rgba(16,243,255,0.25);
+  background: rgba(255,255,255,0.08);
+}
+
+.field.span-2 { grid-column: span 2; }
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-1);
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
+
+.actions { grid-column: span 2; margin-top: 6px; }
+
+@media (max-width: 640px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .field.span-2, .actions { grid-column: span 1; }
+}
