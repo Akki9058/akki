@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Age Verification</title>
+	<style>
+		:root {
+			--bg1: #3d2a7a;
+			--bg2: #2a347a;
+			--bg3: #532b92;
+			--surface: rgba(20, 22, 34, 0.82);
+			--surface-border: rgba(255, 255, 255, 0.08);
+			--text-primary: #e9ecf5;
+			--text-secondary: #cbd2e1;
+			--green: #23b04a;
+			--green-pressed: #1b8d3b;
+			--red: #ea3e3e;
+			--red-pressed: #c33030;
+			--shadow: 0 20px 60px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.35);
+		}
+
+		/* Reset */
+		html, body { height: 100%; }
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+			color: var(--text-primary);
+			background:
+				radial-gradient(900px 600px at 15% -10%, var(--bg3), transparent 60%),
+				linear-gradient(160deg, var(--bg1), var(--bg2));
+			min-height: 100dvh;
+			/* subtle texture */
+			background-attachment: fixed;
+		}
+
+		.wrapper {
+			min-height: 100dvh;
+			display: grid;
+			place-items: center; /* centered on all viewports */
+			padding: clamp(16px, 3vw, 32px);
+		}
+
+		.card {
+			width: min(780px, 94vw);
+			background: var(--surface);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			border: 1px solid var(--surface-border);
+			border-radius: 22px;
+			box-shadow: var(--shadow);
+			padding: clamp(20px, 3.2vw, 36px) clamp(18px, 3vw, 32px) clamp(24px, 3.6vw, 40px);
+		}
+
+		.title {
+			margin: 0 0 clamp(12px, 1.6vw, 16px) 0;
+			font-weight: 800;
+			letter-spacing: 0.3px;
+			font-size: clamp(24px, 3vw, 40px);
+		}
+
+		.description {
+			margin: 0 0 clamp(18px, 2.6vw, 28px) 0;
+			color: var(--text-secondary);
+			line-height: 1.6;
+			font-size: clamp(14px, 1.6vw, 18px);
+		}
+
+		.actions {
+			display: flex;
+			gap: clamp(12px, 2vw, 20px);
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.button {
+			appearance: none;
+			border: 0;
+			border-radius: 999px;
+			padding: clamp(10px, 1.6vw, 14px) clamp(18px, 3vw, 28px);
+			font-weight: 700;
+			font-size: clamp(14px, 1.6vw, 18px);
+			cursor: pointer;
+			color: #fff;
+			min-width: clamp(120px, 20vw, 160px);
+			transition: transform .06s ease, filter .2s ease, background-color .2s ease;
+			box-shadow: 0 8px 16px rgba(0,0,0,.25);
+		}
+		.button:active { transform: translateY(1px) scale(0.99); }
+		.button:focus-visible { outline: 3px solid rgba(255, 255, 255, 0.35); outline-offset: 2px; }
+
+		.button--yes { background: linear-gradient(180deg, var(--green), #1da444); }
+		.button--yes:hover { filter: brightness(1.05); }
+		.button--yes:active { background: var(--green-pressed); }
+
+		.button--no { background: linear-gradient(180deg, var(--red), #d93737); }
+		.button--no:hover { filter: brightness(1.05); }
+		.button--no:active { background: var(--red-pressed); }
+
+		.footer-note { text-align: center; opacity: .75; font-size: 12px; margin-top: 14px; }
+
+		@media (min-width: 1024px) {
+			.wrapper { place-items: center; }
+		}
+	</style>
+</head>
+<body>
+	<main class="wrapper">
+		<section class="card" role="dialog" aria-labelledby="title" aria-describedby="desc" aria-modal="true">
+			<h1 id="title" class="title">Age Verification</h1>
+			<p id="desc" class="description">
+				This website contains content intended for individuals 18 years of age or older.
+				By entering, you confirm that you are at least 18 years old.
+			</p>
+			<div class="actions">
+				<button class="button button--yes" type="button">YES</button>
+				<button class="button button--no" type="button">NO</button>
+			</div>
+			<p class="footer-note">Your choice may be stored to improve your experience.</p>
+		</section>
+	</main>
+</body>
+</html>
