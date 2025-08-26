@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon Nexus — Gaming</title>
+  <meta name="description" content="Neon Nexus — A bright, fast, and immersive gaming landing page.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><span class="brand-mark">⚡</span>Neon Nexus</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#download" class="btn btn-sm">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / First Banner -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-bg" role="img" aria-label="Neon gaming landscape"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 class="hero-title">Enter the Neon Arena</h1>
+        <p class="hero-subtitle">Fast. Bright. Unstoppable. Join millions of players ruling the night.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary">Play Now</a>
+          <a href="#gallery" class="btn btn-ghost">See the World</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features" aria-label="Features">
+    <div class="container">
+      <header class="section-header">
+        <h2>Why You'll Love It</h2>
+        <p>Designed for speed, built for glory. Level up every second.</p>
+      </header>
+      <div class="features-grid">
+        <article class="card feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h10v2H7V5zm0 6h10v2H7v-2zm0 6h10v2H7v-2z"/></svg>
+          </div>
+          <h3>Lightning Performance</h3>
+          <p>120 FPS optimized gameplay with ultra-low latency netcode.</p>
+        </article>
+        <article class="card feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l4 8h8l-6 6 2 8-8-5-8 5 2-8L0 10h8z"/></svg>
+          </div>
+          <h3>Ranked Tiers</h3>
+          <p>Climb from Bronze to Immortal in seasonal competitive ladders.</p>
+        </article>
+        <article class="card feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zm-1 5h2v6h-2V8zm0 8h2v2h-2v-2z"/></svg>
+          </div>
+          <h3>Anti-Cheat Shield</h3>
+          <p>Advanced behavioral detection keeps matches fair and fun.</p>
+        </article>
+        <article class="card feature">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 5h10v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+          </div>
+          <h3>Cross-Play</h3>
+          <p>Squad up across PC, console, and mobile without barriers.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery" aria-label="Gallery">
+    <div class="container">
+      <header class="section-header">
+        <h2>Gallery</h2>
+        <p>Bright, creative worlds — where every frame is a wallpaper.</p>
+      </header>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1400&auto=format&fit=crop" alt="Neon controller"/></figure>
+        <figure class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop" alt="Esports stage"/></figure>
+        <figure class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1400&auto=format&fit=crop" alt="Arcade lights"/></figure>
+        <figure class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1400&auto=format&fit=crop" alt="Neon city"/></figure>
+        <figure class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1585079542156-2755d9c8aff2?q=80&w=1400&auto=format&fit=crop" alt="RGB setup"/></figure>
+        <figure class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1400&auto=format&fit=crop" alt="VR neon"/></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tournaments -->
+  <section class="section" id="tournaments" aria-label="Tournaments">
+    <div class="container">
+      <header class="section-header">
+        <h2>Tournaments</h2>
+        <p>Compete in weekly brackets and seasonal majors with huge prizes.</p>
+      </header>
+      <div class="tournaments-grid">
+        <article class="card tournament">
+          <div class="t-meta"><span>Weekly</span><span>5v5</span></div>
+          <h3>Neon Night Cup</h3>
+          <p>Every Friday — Prize pool $5,000</p>
+          <a href="#" class="btn btn-secondary">Register</a>
+        </article>
+        <article class="card tournament">
+          <div class="t-meta"><span>Monthly</span><span>Solo</span></div>
+          <h3>Cyber Blitz Royale</h3>
+          <p>Last Saturday — Prize pool $10,000</p>
+          <a href="#" class="btn btn-secondary">Register</a>
+        </article>
+        <article class="card tournament">
+          <div class="t-meta"><span>Seasonal</span><span>Invitational</span></div>
+          <h3>Immortal Masters</h3>
+          <p>Winter Major — Prize pool $100,000</p>
+          <a href="#" class="btn btn-secondary">Register</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews" aria-label="Reviews">
+    <div class="container">
+      <header class="section-header">
+        <h2>What Players Say</h2>
+        <p>Real feedback from our global community.</p>
+      </header>
+      <div class="reviews-grid">
+        <article class="card review">
+          <p class="quote">"The neon vibes are unmatched. Feels like flying."</p>
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <p class="author">— NovaStrike</p>
+        </article>
+        <article class="card review">
+          <p class="quote">"Competitive, smooth, and so damn pretty."</p>
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <p class="author">— RiftRunner</p>
+        </article>
+        <article class="card review">
+          <p class="quote">"Finally, a game that respects my reflexes."</p>
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <p class="author">— LumiBlade</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download / CTA -->
+  <section class="section cta" id="download" aria-label="Download">
+    <div class="container">
+      <header class="section-header">
+        <h2>Ready to Play?</h2>
+        <p>Download now on your favorite platform.</p>
+      </header>
+      <div class="cta-grid">
+        <article class="card platform">
+          <h3>PC & Mac</h3>
+          <p>Direct download with launcher support.</p>
+          <a class="btn btn-primary" href="#">Download</a>
+        </article>
+        <article class="card platform">
+          <h3>Console</h3>
+          <p>Available on next-gen marketplaces.</p>
+          <a class="btn btn-primary" href="#">Store Page</a>
+        </article>
+        <article class="card platform">
+          <h3>Mobile</h3>
+          <p>Optimized touch controls and cloud saves.</p>
+          <a class="btn btn-primary" href="#">Get the App</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><span class="brand-mark">⚡</span>Neon Nexus</a>
+      <ul class="social">
+        <li>
+          <a aria-label="Twitter" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.8c-.7.3-1.5.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.8-2.6 1-1.6-1.7-4.2-1.8-5.9-.2-1.1 1-1.6 2.5-1.3 4-3.3-.2-6.3-1.8-8.3-4.3-1.1 1.9-.5 4.3 1.3 5.6-.6 0-1.2-.2-1.7-.5 0 2.1 1.5 3.9 3.6 4.3-.4.1-.8.1-1.2 0 .3 1.8 2 3.1 3.9 3.1-1.6 1.3-3.6 1.9-5.6 1.6 2.1 1.4 4.6 2.1 7.1 2.1 8.6 0 13.3-7.2 13.3-13.3v-.6c.9-.6 1.6-1.3 2.2-2.1z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Discord" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4a4 4 0 00-4-4H8a4 4 0 00-4 4v16l4-2 4 2 4-2 4 2V4zm-6.7 7.5a1.7 1.7 0 11-3.4 0 1.7 1.7 0 013.4 0zm6.4 0a1.7 1.7 0 11-3.4 0 1.7 1.7 0 013.4 0z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Twitch" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2L2 6v14h6v2h2l2-2h4l4-4V2H4zm16 12l-3 3h-5l-2 2v-2H6V4h14v10zM15 6h2v5h-2V6zm-5 0h2v5H10V6z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a aria-label="YouTube" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.7 31.7 0 000 12a31.7 31.7 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.7 31.7 0 0024 12a31.7 31.7 0 00-.5-5.8zM9.8 15.5v-7L16 12l-6.2 3.5z"/></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">© <span id="year"></span> Neon Nexus. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
